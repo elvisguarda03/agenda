@@ -27,7 +27,6 @@ public class RemoveContatoController implements Controller {
 
 		request.getSession().setAttribute("message", "Contato excluído com sucesso!");
 
-		return "redirect:listaContato";
+		return "redirect:listaContato/findAll";
 	}
-
 }

@@ -16,6 +16,7 @@ import br.com.guacom.agenda.model.Contato;
 
 public class AdicionaContatoController implements Controller {
 	
+	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nome = request.getParameter("nome");
 		String email = request.getParameter("email");
@@ -47,6 +48,6 @@ public class AdicionaContatoController implements Controller {
 
 		request.setAttribute("name", contato.getNome());
 		
-		return "redirect:listaContato";
+		return "redirect:listaContato/findAll";
 	}
 }

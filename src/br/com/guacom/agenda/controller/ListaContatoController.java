@@ -20,5 +20,4 @@ public class ListaContatoController implements Controller {
 		
 		return "forward:listaContatos.jsp";
 	}
-	
 }

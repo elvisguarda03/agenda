@@ -51,6 +51,6 @@ public class AlteraContatoController implements Controller {
 		
 		request.getSession().setAttribute("contato", contato);
 		
-		return "redirect:listaContato";
+		return "redirect:listaContato/findAll";
 	}
 }
